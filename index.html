@@ -588,79 +588,277 @@
         
         // === ENGLISH QUESTION DATABASE ===
         const questionDatabase = [
-            { 
-                keyword: "Geography", 
-                question: "What is the capital of France?", 
-                correct: "Paris", 
-                wrong1: "Lyon", 
-                wrong2: "Marseille", 
-                wrong3: "Nice",
-                explanation: "Paris is the capital and largest city of France." 
-            },
-            { 
-                keyword: "Math", 
-                question: "What is the square root of 144?", 
-                correct: "12", 
-                wrong1: "14", 
-                wrong2: "11", 
-                wrong3: "13",
-                explanation: "12 × 12 = 144." 
-            },
-            { 
-                keyword: "English Grammar", 
-                question: "Choose the correct translation: 'I have never been to London'", 
-                correct: "I have never been to London", 
-                wrong1: "I never was in London", 
-                wrong2: "I have never went to London", 
-                wrong3: "I was never in London",
-                explanation: "Present Perfect is used with the adverb 'never'." 
-            },
-            { 
-                keyword: "Biology", 
-                question: "Which organelle is responsible for energy production in the cell?", 
-                correct: "Mitochondria", 
-                wrong1: "Ribosome", 
-                wrong2: "Lysosome", 
-                wrong3: "Nucleus",
-                explanation: "Mitochondria are called the 'powerhouses' of the cell." 
-            },
-            { 
-                keyword: "History", 
-                question: "In what year did World War II end?", 
-                correct: "1945", 
-                wrong1: "1939", 
-                wrong2: "1941", 
-                wrong3: "1942",
-                explanation: "World War II ended in 1945." 
-            },
-            { 
-                keyword: "Geography", 
-                question: "What is the largest ocean on Earth?", 
-                correct: "Pacific", 
-                wrong1: "Atlantic", 
-                wrong2: "Indian", 
-                wrong3: "Arctic",
-                explanation: "The Pacific Ocean covers about 46% of Earth's water surface." 
-            },
-            { 
-                keyword: "Physics", 
-                question: "In what units is electric current measured?", 
-                correct: "Amperes", 
-                wrong1: "Volts", 
-                wrong2: "Joules", 
-                wrong3: "Watts",
-                explanation: "Electric current is measured in Amperes (A)." 
-            },
-            { 
-                keyword: "Chemistry", 
-                question: "What is the chemical symbol for gold?", 
-                correct: "Au", 
-                wrong1: "Ag", 
-                wrong2: "Fe", 
-                wrong3: "Go",
-                explanation: "Au comes from the Latin word 'aurum' meaning gold." 
-            }
-        ];
+{
+    keyword: "Глагол 'to be'",
+    question: "Какова форма Past Participle (V3) для глагола 'to be'?",
+    correct: "been",
+    wrong1: "was",
+    wrong2: "were",
+    wrong3: "being",
+    explanation: "Глагол 'to be' имеет три формы: am/is/are (Present), was/were (Past) и been (Past Participle)."
+},
+{
+    keyword: "Глагол 'to go'",
+    question: "Напишите вторую форму (Past Simple) глагола 'to go'.",
+    correct: "went",
+    wrong1: "goed",
+    wrong2: "gone",
+    wrong3: "going",
+    explanation: "Глагол 'to go' неправильный. Его вторая форма — went, а третья — gone."
+},
+{
+    keyword: "Глагол 'to see'",
+    question: "Какова третья форма (V3) глагола 'to see'?",
+    correct: "seen",
+    wrong1: "saw",
+    wrong2: "seed",
+    wrong3: "seeing",
+    explanation: "Формы глагола 'to see': see – saw – seen. Третья форма используется в Present Perfect."
+},
+{
+    keyword: "Глагол 'to eat'",
+    question: "Вставьте правильную форму: I have _____ an apple.",
+    correct: "eaten",
+    wrong1: "ate",
+    wrong2: "eated",
+    wrong3: "eating",
+    explanation: "После вспомогательного глагола have/has используется третья форма глагола (V3). Eat – ate – eaten."
+},
+{
+    keyword: "Глагол 'to write'",
+    question: "Какая форма глагола 'to write' используется в предложении: She has _____ a letter?",
+    correct: "written",
+    wrong1: "wrote",
+    wrong2: "writed",
+    wrong3: "writing",
+    explanation: "В Present Perfect используется V3. Формы глагола write: write – wrote – written."
+},
+{
+    keyword: "Глагол 'to take'",
+    question: "Напишите Past Simple форму глагола 'to take'.",
+    correct: "took",
+    wrong1: "taken",
+    wrong2: "taked",
+    wrong3: "taking",
+    explanation: "Глагол 'to take' изменяется так: take – took – taken. Вторая форма — took."
+},
+{
+    keyword: "Глагол 'to give'",
+    question: "Какова третья форма глагола 'to give'?",
+    correct: "given",
+    wrong1: "gave",
+    wrong2: "gived",
+    wrong3: "giving",
+    explanation: "Формы глагола 'give': give – gave – given. V3 используется с have/has."
+},
+{
+    keyword: "Глагол 'to do'",
+    question: "Вставьте пропущенное слово: They have _____ their homework.",
+    correct: "done",
+    wrong1: "did",
+    wrong2: "doed",
+    wrong3: "doing",
+    explanation: "Глагол 'do' неправильный: do – did – done. После have нужна форма done."
+},
+{
+    keyword: "Глагол 'to make'",
+    question: "Какая форма глагола 'make' правильная в Past Simple?",
+    correct: "made",
+    wrong1: "maked",
+    wrong2: "maken",
+    wrong3: "making",
+    explanation: "Глагол 'make' имеет формы: make – made – made. Вторая и третья формы одинаковы."
+},
+{
+    keyword: "Глагол 'to know'",
+    question: "Напишите V3 форму глагола 'to know'.",
+    correct: "known",
+    wrong1: "knew",
+    wrong2: "knowed",
+    wrong3: "knowing",
+    explanation: "Формы глагола 'know': know – knew – known. Третья форма заканчивается на -n."
+},
+{
+    keyword: "Глагол 'to think'",
+    question: "Какова вторая форма глагола 'to think'?",
+    correct: "thought",
+    wrong1: "thinked",
+    wrong2: "thunk",
+    wrong3: "thinking",
+    explanation: "Глагол 'think' изменяется как: think – thought – thought. Обе формы past совпадают."
+},
+{
+    keyword: "Глагол 'to buy'",
+    question: "Вставьте правильную форму: He has _____ a new car.",
+    correct: "bought",
+    wrong1: "buyed",
+    wrong2: "buy",
+    wrong3: "buying",
+    explanation: "Глагол 'buy' неправильный: buy – bought – bought. После has используется V3."
+},
+{
+    keyword: "Глагол 'to bring'",
+    question: "Какова третья форма глагола 'to bring'?",
+    correct: "brought",
+    wrong1: "bringed",
+    wrong2: "brang",
+    wrong3: "bringing",
+    explanation: "Формы глагола 'bring': bring – brought – brought. Обратите внимание на окончание -ought."
+},
+{
+    keyword: "Глагол 'to catch'",
+    question: "Напишите Past Simple форму глагола 'to catch'.",
+    correct: "caught",
+    wrong1: "catched",
+    wrong2: "catch",
+    wrong3: "catching",
+    explanation: "Глагол 'catch' имеет формы: catch – caught – caught. Это неправильный глагол."
+},
+{
+    keyword: "Глагол 'to teach'",
+    question: "Какова V3 форма глагола 'to teach'?",
+    correct: "taught",
+    wrong1: "teached",
+    wrong2: "teach",
+    wrong3: "teaching",
+    explanation: "Формы глагола 'teach': teach – taught – taught. Похож на глагол 'catch'."
+},
+{
+    keyword: "Глагол 'to find'",
+    question: "Вставьте пропущенное слово: We have _____ the keys.",
+    correct: "found",
+    wrong1: "finded",
+    wrong2: "find",
+    wrong3: "finding",
+    explanation: "Глагол 'find' изменяется так: find – found – found. После have нужна форма found."
+},
+{
+    keyword: "Глагол 'to lose'",
+    question: "Какова третья форма глагола 'to lose'?",
+    correct: "lost",
+    wrong1: "losed",
+    wrong2: "lose",
+    wrong3: "losing",
+    explanation: "Формы глагола 'lose': lose – lost – lost. Вторая и третья формы одинаковы."
+},
+{
+    keyword: "Глагол 'to win'",
+    question: "Напишите Past Simple форму глагола 'to win'.",
+    correct: "won",
+    wrong1: "winned",
+    wrong2: "win",
+    wrong3: "winning",
+    explanation: "Глагол 'win' неправильный: win – won – won. Не добавляйте окончание -ed."
+},
+{
+    keyword: "Глагол 'to begin'",
+    question: "Какова V3 форма глагола 'to begin'?",
+    correct: "begun",
+    wrong1: "began",
+    wrong2: "begined",
+    wrong3: "beginning",
+    explanation: "Формы глагола 'begin': begin – began – begun. Не путайте вторую и третью формы."
+},
+{
+    keyword: "Глагол 'to drink'",
+    question: "Вставьте правильную форму: She has _____ coffee.",
+    correct: "drunk",
+    wrong1: "drank",
+    wrong2: "drinked",
+    wrong3: "drinking",
+    explanation: "Глагол 'drink' имеет формы: drink – drank – drunk. После has используется drunk."
+},
+{
+    keyword: "Глагол 'to sing'",
+    question: "Какова вторая форма глагола 'to sing'?",
+    correct: "sang",
+    wrong1: "sung",
+    wrong2: "singed",
+    wrong3: "singing",
+    explanation: "Формы глагола 'sing': sing – sang – sung. Вторая форма — sang, третья — sung."
+},
+{
+    keyword: "Глагол 'to swim'",
+    question: "Напишите V3 форму глагола 'to swim'.",
+    correct: "swum",
+    wrong1: "swam",
+    wrong2: "swimmed",
+    wrong3: "swimming",
+    explanation: "Глагол 'swim' изменяется так: swim – swam – swum. Третья форма — swum."
+},
+{
+    keyword: "Глагол 'to fly'",
+    question: "Какова третья форма глагола 'to fly'?",
+    correct: "flown",
+    wrong1: "flew",
+    wrong2: "flied",
+    wrong3: "flying",
+    explanation: "Формы глагола 'fly': fly – flew – flown. Обратите внимание на окончание -own."
+},
+{
+    keyword: "Глагол 'to break'",
+    question: "Вставьте пропущенное слово: He has _____ his phone.",
+    correct: "broken",
+    wrong1: "broke",
+    wrong2: "breaked",
+    wrong3: "breaking",
+    explanation: "Глагол 'break' имеет формы: break – broke – broken. После has нужна форма broken."
+},
+{
+    keyword: "Глагол 'to speak'",
+    question: "Какова V3 форма глагола 'to speak'?",
+    correct: "spoken",
+    wrong1: "spoke",
+    wrong2: "speaked",
+    wrong3: "speaking",
+    explanation: "Формы глагола 'speak': speak – spoke – spoken. Третья форма заканчивается на -oken."
+},
+{
+    keyword: "Глагол 'to choose'",
+    question: "Напишите Past Simple форму глагола 'to choose'.",
+    correct: "chose",
+    wrong1: "chosen",
+    wrong2: "choosed",
+    wrong3: "choosing",
+    explanation: "Глагол 'choose' изменяется так: choose – chose – chosen. Вторая форма — chose."
+},
+{
+    keyword: "Глагол 'to wear'",
+    question: "Какова третья форма глагола 'to wear'?",
+    correct: "worn",
+    wrong1: "wore",
+    wrong2: "weared",
+    wrong3: "wearing",
+    explanation: "Формы глагола 'wear': wear – wore – worn. Третья форма — worn."
+},
+{
+    keyword: "Глагол 'to forget'",
+    question: "Вставьте правильную форму: I have _____ my password.",
+    correct: "forgotten",
+    wrong1: "forgot",
+    wrong2: "forgetted",
+    wrong3: "forgetting",
+    explanation: "Глагол 'forget' имеет формы: forget – forgot – forgotten. После have используется forgotten."
+},
+{
+    keyword: "Глагол 'to drive'",
+    question: "Какова V3 форма глагола 'to drive'?",
+    correct: "driven",
+    wrong1: "drove",
+    wrong2: "drived",
+    wrong3: "driving",
+    explanation: "Формы глагола 'drive': drive – drove – driven. Третья форма заканчивается на -iven."
+},
+{
+    keyword: "Глагол 'to rise'",
+    question: "Напишите Past Simple форму глагола 'to rise'.",
+    correct: "rose",
+    wrong1: "risen",
+    wrong2: "rised",
+    wrong3: "rising",
+    explanation: "Глагол 'rise' изменяется так: rise – rose – risen. Вторая форма — rose."
+}
+];
 
         let studentName = '', selectedCharacter = null, currentQuestions = [], currentIndex = 0, score = 0;
         let startTime = null, timerInterval = null, selectedAnswer = null, currentPlanetIndex = 0;
